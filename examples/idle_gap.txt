@@ -1,0 +1,9 @@
+# Workload with a deliberate idle gap to exercise CPU-utilization reporting.
+#
+# Columns: id  arrival  burst  [priority]
+
+A   0   4   1
+B   2   2   2
+# nothing arrives between t=6 and t=12, so the CPU goes idle here
+C   12  3   1
+D   13  5   3
